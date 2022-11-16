@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;900&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <!-- Body Container -->
+  <div class="flex justify-center items-center min-h-screen bg-[url('../assets/destination/background-destination-mobile.jpg')] sm:bg-[url('../assets/destination/background-destination-tablet.jpg')] lg:bg-[url('../assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-cover bg-center">
+    <!-- Icon -->
+    <svg class="absolute scale-75 sm:scale-100 top-6 left-6 sm:left-[39px] lg:top-16 lg:left-[55px]" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+    <!-- Horizontal Rule -->
+    <hr class="hidden lg:inline-block absolute z-20 opacity-20 top-[88px] right-1/2 bg-white h-px w-[473px] 2xl:w-[800px] 2xl:right-[40%]">
+    <!-- Navigation Button -->
+    <button id="open" class="sm:hidden absolute top-0 right-0 pt-[33px] pr-6">
+        <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg> 
+    </button>        
+    <!-- Glass Window -->
+    <div id="glass" class="sm:hidden hidden absolute top-0 right-0 flex flex-col top-0 h-screen w-[254px] z-20 bg-gray-600 bg-clip-padding bg-opacity-10"  style="backdrop-filter: blur(30px)">
+        <button id="close" class="absolute top-0 right-0 pt-[33px] pr-6">
+            <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg> 
+        </button>
+        <!-- Navigation Buttons -->
+        <div class="flex flex-col mt-32 space-y-6 width-full">
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="index.html"><b>00</b> HOME</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest border-r-4 border-white" href=""><b>01</b> DESTINATION</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="crew-commander.html"><b>02</b> CREW</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="absolute top-0 right-0 hidden lg:mt-10 sm:flex space-x-12 lg:space-x-16 px-16 lg:pr-44 lg:pl-32 bg-gray-600 bg-clip-padding bg-opacity-10 z-30"  style="backdrop-filter: blur(30px)">
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="index.html"><b class="hidden lg:inline-block">00</b> HOME</a>
+        <a class="py-8 border-b-4 border-white font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href=""><b class="hidden lg:inline-block">01</b> DESTINATION</a>
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="crew-commander.html"><b class="hidden lg:inline-block">02</b> CREW</a>
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="technology-vehicle.html"><b class="hidden lg:inline-block">03</b> TECHNOLOGY</a>
+    </div>
+    <!-- Upper Container -->
+  <div class="mt-[88px] sm:mt-[136px] lg:mt-[212px] pb-[58px] sm:pb-0 relative flex flex-col lg:flex-row space-y-[26px] sm:space-y-[53px] lg:space-y-0 lg:space-x-[157px] 2xl:space-x-[500px]">
+    <!-- Planet Container -->
+    <div class="flex flex-col items-center space-y-8 sm:space-y-[60px] lg:space-y-[97px]">
+      <div class="sm:absolute sm:-left-[38.5px] lg:-left-10 font-barlow-condensed text-base sm:text-xl lg:text-[28px] text-white leading-[19.2px] sm:leading-6 lg:leading-[33.6px] tracking-widest"><span class="font-black text-gray-500 px-2">01</span> PICK YOUR DESTINATION</div>
+      <img class="w-[170px] sm:w-[300px] lg:w-[445px]" src="./assets/destination/image-titan.webp" alt="">
+    </div>
+    <!-- Nav and Content Container -->
+    <div class="flex flex-col space-y-5 sm:space-y-8 lg:space-y-[37px] items-center lg:items-start">
+      <!-- Nav Container -->
+      <div class="flex flex-row w-[237.5px] justify-between">
+        <a class="font-barlow-condensed leading-[16.8px] sm:leading-[19.2px] tracking-widest text-[#D0D6F9] text-sm sm:text-base py-2 hover:border-b-4 hover:border-gray-500" href="destination-moon.html">MOON</a>
+        <a class="font-barlow-condensed leading-[16.8px] sm:leading-[19.2px] tracking-widest text-[#D0D6F9] text-sm sm:text-base py-2 hover:border-b-4 hover:border-gray-500" href="destination-mars.html">MARS</a>
+        <a class="font-barlow-condensed leading-[16.8px] sm:leading-[19.2px] tracking-widest text-[#D0D6F9] text-sm sm:text-base py-2 hover:border-b-4 hover:border-gray-500" href="destination-europa.html">EUROPA</a>
+        <a class="font-barlow-condensed leading-[16.8px] sm:leading-[19.2px] tracking-widest text-white text-sm sm:text-base py-2 border-b-4 border-white" href="">TITAN</a>
+      </div>
+      <!-- Content -->
+      <div class="flex flex-col lg:items-start sm:pb-[49px] lg:pb-[54px] sm:border-b-[1px] sm:border-gray-600">
+        <div class="font-bellefair text-[56px] sm:text-[80px] lg:text-[100px] leading-[64.18px] sm:leading-[91.68px] lg:leading-[114.6px] text-white text-center uppercase">TITAN</div>
+        <div class="pt-[1px] sm:pt-2 lg:pt-[14px] text-center lg:text-left w-[327px] sm:w-[573px] lg:w-[444px] font-barlow text-[15px] sm:text-base lg:text-lg leading-[25px] sm:leading-7 lg:leading-8 text-[#D0D6F9]">
+          The only moon known to have a dense atmosphere other than Earth, Titan 
+          is a home away from home (just a few hundred degrees colder!). As a 
+          bonus, you get striking views of the Rings of Saturn.
+        </div>
+      </div>
+      <!-- Horizontal Rule -->
+      <hr class="sm:hidden opacity-20 right-1/2 bg-white h-px w-[327px]">
+      <!-- Lower Container -->
+      <div class="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:pb-[62px] lg:pb-[118px] sm:space-x-32 lg:space-x-20">
+        <div class="flex flex-col space-y-3 items-center justify-center lg:items-start">
+          <div class="font-barlow-condensed text-sm leading-[16.8px] tracking-widest text-[#D0D6F9]">AVG. DISTANCE</div>
+          <div class="font-bellefair text-white text-[28px] leading-[32.09px] uppercase">1.6 bil. km</div>
+        </div>
+        <div class="flex flex-col space-y-3 items-center justify-center lg:items-start">
+          <div class="font-barlow-condensed text-sm leading-[16.8px] tracking-widest text-[#D0D6F9]">EST. TRAVEL TIME</div>
+          <div class="font-bellefair text-white text-[28px] leading-[32.09px] uppercase">7 years</div>
+        </div>
+      </div>
+    </div>
+</div>
+ 
+  </div>
+
+
+  <script>
+    const targetDiv = document.getElementById("glass");
+    const btn = document.getElementById("open");
+    btn.onclick = function () {
+        targetDiv.style.display = "flex";
+    };
+
+    const btn1 = document.getElementById("close");
+    btn1.onclick = function () {
+        targetDiv.style.display = "none";
+    };
+  </script>
+</body>
+</html>
+
+  <!-- 00 Home
+  01 Destination
+  02 Crew
+  03 Technology
+
+  01 Pick your destination
+
+  Moon
+  Mars
+  Europa
+  Titan
+
+  Titan
+
+  The only moon known to have a dense atmosphere other than Earth, Titan 
+  is a home away from home (just a few hundred degrees colder!). As a 
+  bonus, you get striking views of the Rings of Saturn.
+
+  Avg. distance
+  1.6 bil. km
+
+  Est. travel time
+  7 years -->

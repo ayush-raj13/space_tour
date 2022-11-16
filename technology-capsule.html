@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <!-- Body Container -->
+  <div class="flex justify-center items-center min-h-screen bg-[url('../assets/technology/background-technology-mobile.jpg')] sm:bg-[url('../assets/technology/background-technology-tablet.jpg')] lg:bg-[url('../assets/technology/background-technology-desktop.jpg')] bg-no-repeat bg-cover bg-center">
+    <!-- Icon -->
+    <svg class="absolute scale-75 sm:scale-100 top-6 left-6 sm:left-[39px] lg:top-16 lg:left-[55px]" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+    <!-- Horizontal Rule -->
+    <hr class="hidden lg:inline-block absolute z-20 opacity-20 top-[88px] right-1/2 bg-white h-px w-[473px] 2xl:w-[800px] 2xl:right-[40%]">
+    <!-- Navigation Button -->
+    <button id="open" class="sm:hidden absolute top-0 right-0 pt-[33px] pr-6">
+        <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg> 
+    </button>        
+    <!-- Glass Window -->
+    <div id="glass" class="sm:hidden hidden absolute top-0 right-0 flex flex-col top-0 h-screen w-[254px] z-20 bg-gray-600 bg-clip-padding bg-opacity-10"  style="backdrop-filter: blur(30px)">
+        <button id="close" class="absolute top-0 right-0 pt-[33px] pr-6">
+            <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg> 
+        </button>
+        <!-- Navigation Buttons -->
+        <div class="flex flex-col mt-32 space-y-6 width-full">
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="index.html"><b>00</b> HOME</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="destination-moon.html"><b>01</b> DESTINATION</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="crew-commander.html"><b>02</b> CREW</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest border-r-4 border-white" href=""><b>03</b> TECHNOLOGY</a>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="absolute top-0 right-0 hidden lg:mt-10 sm:flex space-x-12 lg:space-x-16 px-16 lg:pr-44 lg:pl-32 bg-gray-600 bg-clip-padding bg-opacity-10 z-30"  style="backdrop-filter: blur(30px)">
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="index.html"><b class="hidden lg:inline-block">00</b> HOME</a>
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="destination-moon.html"><b class="hidden lg:inline-block">01</b> DESTINATION</a>
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="crew-commander.html"><b class="hidden lg:inline-block">02</b> CREW</a>
+        <a class="py-8 border-b-4 border-white font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href=""><b class="hidden lg:inline-block">03</b> TECHNOLOGY</a>
+    </div>
+    <!-- Main Container -->
+    <div class="lg:relative flex flex-col lg:flex-row-reverse space-y-[34px] sm:space-y-14 lg:space-y-0 sm:pt-[272px] pb-[81px] sm:pb-[97px] lg:pb-0 w-full">
+      <!-- Heading -->
+      <div class="absolute lg:top-[212px] lg:left-[166.5px] hidden lg:inline-block top-0 -left-0 font-barlow-condensed text-[28px] text-white leading-[33.6px] tracking-widest"><span class="font-black text-gray-500 px-2">03</span> SPACE LAUNCH 101</div>
+      <!-- Upper Container -->
+      <div class="flex flex-col space-y-8 sm:space-y-[60px]">
+        <!-- Title -->
+        <div class="sm:pl-[38.5px] text-center sm:text-left lg:hidden font-barlow-condensed text-base sm:text-xl lg:text-[28px] text-white leading-[19.2px] sm:leading-6 lg:leading-[33.6px] tracking-widest"><span class="font-black text-gray-500 px-2">03</span> SPACE LAUNCH 101</div>
+        <!-- Image -->
+        <img class="lg:hidden w-full h-[170px] sm:h-[310px]" src="./assets/technology/image-space-capsule-landscape.jpg" alt="">
+        <img class="hidden lg:inline-block w-[645px] pl-[130px] 2xl:pl-[400px] 2xl:w-[915px]" src="./assets/technology/image-space-capsule-portrait.jpg" alt="">
+      </div>
+      <!-- Lower Container -->
+      <div class="flex flex-col lg:flex-row items-center space-y-[26px] sm:space-y-11 lg:space-y-0 lg:space-x-20">
+        <!-- Nav Buttons -->
+        <div class="flex lg:flex-col w-[152px] sm:w-[210px] lg:h-[303px] lg:w-auto justify-between">
+          <a class="py-2 px-[18px] sm:py-[12px] sm:px-[24px] lg:text-center lg:py-[26px] rounded-full bg-opacity-0 border-[2px] border-white border-opacity-40 hover:border-opacity-100 font-bellefair text-white sm:text-2xl lg:text-6 lg:leading-[34px]" href="technology-vehicle.html">1</a>
+          <a class="py-2 px-4 sm:py-[12px] sm:px-[21px] lg:text-center lg:py-[26px] rounded-full bg-opacity-0 border-[2px] border-white border-opacity-40 hover:border-opacity-100 font-bellefair text-white sm:text-2xl lg:text-6 lg:leading-[34px]" href="technology-spaceport.html">2</a>
+          <a class="py-2 px-[18px] sm:py-[12px] sm:px-6 lg:px-10 lg:py-[28px] rounded-full bg-white font-bellefair text-black sm:text-2xl lg:text-6 lg:leading-[34px]" href="">3</a>
+        </div>
+        <!-- Description -->
+        <div class="flex flex-col items-center lg:items-start lg:justify-center">
+          <div class="font-barlow-condensed text-sm sm:text-base leading-[16.8px] sm:leading-[19.2px] text-[#D0D6F9] tacking-widest">THE TERMINOLOGY…</div>
+          <div class="font-bellefair text-2xl sm:text-[40px] lg:text-[56px] leading-[27.5px] sm:leading-[45.84px] lg:leading-[64.18px] text-white pt-[9px] sm:pt-4 lg:pt-[11px] uppercase">Space capsule</div>
+          <div class="font-barlow w-[327px] leading-[25px] text-[15px] sm-text-base sm:w-[458px] sm:leading-7 sm:text-base lg:w-[444px] lg:leading-8 lg:text-lg text-[#D0D6F9] text-center lg:text-left pt-4 lg:pt-[17px]">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+            you'll spend your time during the flight. It includes a space gym, cinema, 
+            and plenty of other activities to keep you entertained. -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const targetDiv = document.getElementById("glass");
+    const btn = document.getElementById("open");
+    btn.onclick = function () {
+        targetDiv.style.display = "flex";
+    };
+
+    const btn1 = document.getElementById("close");
+    btn1.onclick = function () {
+        targetDiv.style.display = "none";
+    };
+  </script>
+</body>
+</html>
+
+<!-- <div class="flex lg:flex-col w-[152px] sm:w-[210px] lg:h-[303px] lg:w-auto justify-between">
+  <a class="py-2 px-[18px] sm:py-[12px] sm:px-[24px] lg:text-center lg:py-[26px] rounded-full bg-opacity-0 border-[2px] border-white border-opacity-40 hover:border-opacity-100 font-bellefair text-white sm:text-2xl lg:text-6 lg:leading-[34px]" href="technology-vehicle.html">1</a>
+  <a class="py-2 px-[18px] sm:py-[12px] sm:px-6 lg:px-10 lg:py-[28px] rounded-full bg-white font-bellefair text-black sm:text-2xl lg:text-6 lg:leading-[34px]" href="">2</a>
+  <a class="py-2 px-4 sm:py-[12px] sm:px-[21px] lg:text-center lg:py-[26px] rounded-full bg-opacity-0 border-[2px] border-white border-opacity-40 hover:border-opacity-100 font-bellefair text-white sm:text-2xl lg:text-6 lg:leading-[34px]" href="technology-capsule.html">3</a>
+</div> -->

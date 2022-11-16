@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+    <!-- Body Container -->
+    <div class="flex justify-center items-center min-h-screen bg-[url('../assets/home/background-home-mobile.jpg')] sm:bg-[url('../assets/home/background-home-tablet.jpg')] lg:bg-[url('../assets/home/background-home-desktop.jpg')] bg-no-repeat bg-cover bg-center">
+        <!-- Icon -->
+        <svg class="absolute scale-75 sm:scale-100 top-6 left-6 sm:left-[39px] lg:top-16 lg:left-[55px]" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+        <!-- Horizontal Rule -->
+        <hr class="hidden lg:inline-block absolute z-20 opacity-20 top-[88px] right-1/2 bg-white h-px w-[473px] 2xl:w-[800px] 2xl:right-[40%]">
+        <!-- Navigation Button -->
+        <button id="open" class="sm:hidden absolute top-0 right-0 pt-[33px] pr-6">
+            <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg> 
+        </button>        
+        <!-- Glass Window -->
+        <div id="glass" class="sm:hidden hidden absolute top-0 right-0 flex flex-col top-0 h-screen w-[254px] z-20 bg-gray-600 bg-clip-padding bg-opacity-10"  style="backdrop-filter: blur(30px)">
+            <button id="close" class="absolute top-0 right-0 pt-[33px] pr-6">
+                <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg> 
+            </button>
+            <!-- Navigation Buttons -->
+            <div class="flex flex-col mt-32 space-y-6 width-full">
+                <a class="pl-6 font-barlow-condensed text-white tracking-widest border-r-4 border-white" href=""><b>00</b> HOME</a>
+                <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="destination-moon.html"><b>01</b> DESTINATION</a>
+                <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="crew-commander.html"><b>02</b> CREW</a>
+                <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="absolute top-0 right-0 hidden lg:mt-10 sm:flex space-x-12 lg:space-x-16 px-16 lg:pr-44 lg:pl-32 bg-gray-600 bg-clip-padding bg-opacity-10 z-30"  style="backdrop-filter: blur(30px)">
+            <a class="py-8 border-b-4 border-white font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href=""><b class="hidden lg:inline-block">00</b> HOME</a>
+            <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="destination-moon.html"><b class="hidden lg:inline-block">01</b> DESTINATION</a>
+            <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="crew-commander.html"><b class="hidden lg:inline-block">02</b> CREW</a>
+            <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="technology-vehicle.html"><b class="hidden lg:inline-block">03</b> TECHNOLOGY</a>
+        </div>
+        <!-- Card Container -->
+        <div class="relative pt-[112px] sm:pt-[202px] lg:pt-[387px] pb-12 sm:pb-[90px] lg:pb-[131px] flex flex-col lg:flex-row space-y-[81px] sm:space-y-[156px] lg:space-x-[386px] justify-between">
+            <!-- Content Container -->
+            <div class="flex flex-col items-center lg:items-start lg:justify-end">
+                <div class="font-barlow-condensed sm:text-xl lg:text-[28px]  text-[#D0D6F9] tracking-widest leading-[19.2px] sm:leading-6 lg:leading-[33.6px]">SO, YOU WANT TO TRAVEL TO</div>
+                <div class="py-4 sm:py-6 lg:py-8 font-bellefair text-[80px] sm:text-[150px] text-white leading-[100px] sm:leading-[150px] lg:leading-[171.9px]">SPACE</div>
+                <div class="lg:text-left w-[327px] sm:w-[444px] leading-6 sm:leading-7 lg:leading-8 text-center font-barlow text-[15px] sm:text-base lg:text-lg text-[#D0D6F9] tracking-normal">
+                    Let’s face it; if you want to go to space, you might
+                     as well genuinely go to outer space and not hover
+                      kind of on the edge of it. Well sit back, and relax
+                       because we’ll give you a truly out of this world
+                     experience!</div>
+            </div>
+            <!-- Button Container -->
+            <div class="mt-[81px] flex justify-center lg:flex-col lg:justify-end">
+                <a class="hover:shadow-3xl transition duration-200 py-14 sm:py-20 lg:py-[90px] px-7 sm:px-10 lg:px-11 rounded-full bg-white select-none font-bellefair text-[22px] sm:text-[28px] lg:text-[34px]" href="destination-moon.html">EXPLORE</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const targetDiv = document.getElementById("glass");
+        const btn = document.getElementById("open");
+        btn.onclick = function () {
+            targetDiv.style.display = "flex";
+        };
+
+        const btn1 = document.getElementById("close");
+        btn1.onclick = function () {
+            targetDiv.style.display = "none";
+        };
+      </script>
+
+</body>
+</html>

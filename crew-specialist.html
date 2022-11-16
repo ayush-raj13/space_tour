@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;900&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <!-- Body Container -->
+  <div class="flex justify-center items-center min-h-screen bg-[url('../assets/crew/background-crew-mobile.jpg')] sm:bg-[url('../assets/crew/background-crew-tablet.jpg')] lg:bg-[url('../assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover bg-center">
+    <!-- Icon -->
+    <svg class="absolute scale-75 sm:scale-100 top-6 left-6 sm:left-[39px] lg:top-16 lg:left-[55px]" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+    <!-- Horizontal Rule -->
+    <hr class="hidden lg:inline-block absolute z-20 opacity-20 top-[88px] right-1/2 bg-white h-px w-[473px] 2xl:w-[800px] 2xl:right-[40%]">
+    <!-- Navigation Button -->
+    <button id="open" class="sm:hidden absolute top-0 right-0 pt-[33px] pr-6">
+        <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg> 
+    </button>        
+    <!-- Glass Window -->
+    <div id="glass" class="sm:hidden hidden absolute top-0 right-0 flex flex-col top-0 h-screen w-[254px] z-20 bg-gray-600 bg-clip-padding bg-opacity-10"  style="backdrop-filter: blur(30px)">
+        <button id="close" class="absolute top-0 right-0 pt-[33px] pr-6">
+            <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg> 
+        </button>
+        <!-- Navigation Buttons -->
+        <div class="flex flex-col mt-32 space-y-6 width-full">
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="index.html"><b>00</b> HOME</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="destination-moon.html"><b>01</b> DESTINATION</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest border-r-4 border-white" href=""><b>02</b> CREW</a>
+            <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="absolute top-0 right-0 hidden lg:mt-10 sm:flex space-x-12 lg:space-x-16 px-16 lg:pr-44 lg:pl-32 bg-gray-600 bg-clip-padding bg-opacity-10 z-30"  style="backdrop-filter: blur(30px)">
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="index.html"><b class="hidden lg:inline-block">00</b> HOME</a>
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="destination-moon.html"><b class="hidden lg:inline-block">01</b> DESTINATION</a>
+        <a class="py-8 border-b-4 border-white font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href=""><b class="hidden lg:inline-block">02</b> CREW</a>
+        <a class="py-8 hover:border-b-4 border-slate-500 font-barlow-condensed leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="technology-vehicle.html"><b class="hidden lg:inline-block">03</b> TECHNOLOGY</a>
+    </div>
+    <!-- Heading -->
+    <div class="absolute lg:hidden top-[88px] sm:top-[136px] mx-auto sm:mx-0 sm:left-[38.5px] lg:top-[212px] lg:left-[166.5px] font-barlow-condensed text-base sm:text-xl lg:text-[28px] text-white leading-[19.2px] sm:leading-6 lg:leading-[33.6px] tracking-widest"><span class="font-black text-gray-500 px-2">02</span> MEET YOUR CREW</div>
+    <!-- Upper Container -->
+  <div class="mt-[139px] sm:mt-[180px] lg:mt-[198px] pb-[104px] sm:pb-0 relative  flex flex-col sm:flex-col-reverse lg:flex-row-reverse space-y-[26px] sm:space-y-[53px] lg:space-y-0 lg:space-x-0">
+    <!-- Planet Container -->
+    <div class="flex flex-col items-center space-y-8 sm:space-y-[60px] lg:space-y-[97px] sm:mt-4 sm:justify-end">
+      <img class="w-[177.12px] sm:w-[456.37px] lg:pl-[100px] lg:w-[568.07px]" src="./assets/crew/image-mark-shuttleworth.webp" alt="">
+      <!-- Horizontal Rule -->
+      <hr class="relative -top-8 left-1 sm:hidden opacity-20 right-1/2 bg-white h-px w-[327px]">
+    </div>
+    <!-- Nav and Content Container -->
+    <div class="relative -top-6 flex flex-col sm:flex-col-reverse space-y-8 sm:space-y-8 lg:space-y-[37px] items-center lg:items-start">
+      <!-- Nav Container -->
+      <div class="flex flex-row w-[88px] justify-between lg:mb-[60px] lg:mt-[60px]">
+        <a class="p-[5px] rounded-full bg-gray-600 lg:bg-gray-700 hover:bg-zinc-500" href="crew-commander.html"></a>
+        <a class="p-[5px] rounded-full bg-white" href=""></a>
+        <a class="p-[5px] rounded-full bg-gray-600 lg:bg-gray-700 hover:bg-zinc-500" href="crew-pilot.html"></a>
+        <a class="p-[5px] rounded-full bg-gray-600 lg:bg-gray-700 hover:bg-zinc-500" href="crew-engineer.html"></a>
+      </div>
+      <!-- Content -->
+      <div class="flex flex-col lg:items-start sm:pb-[49px] lg:pb-[54px] lg:pr-[100px]">
+        <div class="hidden lg:inline-block mb-[154px] font-barlow-condensed text-base sm:text-xl lg:text-[28px] text-white leading-[19.2px] sm:leading-6 lg:leading-[33.6px] tracking-widest"><span class="font-black text-gray-500 px-2">02</span> MEET YOUR CREW</div>
+        <div class="font-bellefair text-base sm:text-2xl lg:text-[32px] leading-[18.34px] sm:leading-[27.5px] lg:leading-[36.67px] text-white opacity-50 text-center uppercase">Mission Specialist</div>
+        <div class="pt-2 font-bellefair text-2xl sm:text-[40px] lg:text-[56px] leading-[27.5px] sm:leading-[45.84px] lg:leading-[64.18px] text-white text-center uppercase">Mark Shuttleworth</div>
+        <div class="pt-4 sm:pt-2 lg:pt-[14px] text-center lg:text-left w-[327px] sm:w-[573px] lg:w-[444px] font-barlow text-[15px] sm:text-base lg:text-lg leading-[25px] sm:leading-7 lg:leading-8 text-[#D0D6F9]">
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+          the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+          African to travel to space as a space tourist.
+        </div>
+      </div>
+    </div>
+</div>
+ 
+  </div>
+
+
+  <script>
+    const targetDiv = document.getElementById("glass");
+    const btn = document.getElementById("open");
+    btn.onclick = function () {
+        targetDiv.style.display = "flex";
+    };
+
+    const btn1 = document.getElementById("close");
+    btn1.onclick = function () {
+        targetDiv.style.display = "none";
+    };
+  </script>
+</body>
+</html>
+
+  <!-- 00 Home
+  01 Destination
+  02 Crew
+  03 Technology
+
+  02 Meet your crew
+
+  Mission Specialist
+  Mark Shuttleworth
+
+  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+  African to travel to space as a space tourist. -->
